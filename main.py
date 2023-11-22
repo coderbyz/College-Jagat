@@ -52,6 +52,5 @@ def community_chat():
 @app.route("/feedback")
 def feedback():
     return render_template('underdev.html')
-
-
-app.run()
+if __name__ == "__main__":
+        app.run(debug=False,host= '0.0.0.0')
